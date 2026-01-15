@@ -24,7 +24,7 @@
 	<a href="https://sbbldrugcalculator.github.io" class="card_wrap_link">
 		<div class="card" id="drugcalculator">
 			<h3 class="card_title">
-				Drug Sentencing Calculator: Springstead, Bartish, Borgula & Lynch Law, PLLC
+				Drug Sentencing Calculator: SBBL Law, PLLC
 				<img src="./link.png" class="card_link" alt="Link"/>
 			</h3>
 			<p class="card_subtitle">
@@ -192,11 +192,11 @@
 		flex-basis: 570px;
 		z-index: 20;
 		position: relative;
-		max-width: 585px;
-		width: 85%;
+		max-width: 605px;
+		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
-		padding-bottom: 1em;
+		padding-bottom: 1.5em;
 	}
 
 	img {
