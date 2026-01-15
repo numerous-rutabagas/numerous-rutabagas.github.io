@@ -1,0 +1,11 @@
+{
+    "extends": "@tsconfig/svelte",
+    "include": ["src/**/*", "src/node_modules/**/*", "public/assets"],
+    "exclude": ["node_modules/*", "__sapper__/*", "static/*"],
+    "compilerOptions": {
+        "lib": ["ES2021", "DOM", "DOM.iterable"],
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "downlevelIteration": true
+    }
+}

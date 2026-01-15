@@ -1,0 +1,113 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    --text: var(--light-text);
+    --link: var(--light-link);
+    color: var(--text);
+    background-color: var(--light-bg);
+    --box-shadow: var(--light-box-shadow);
+    --card-bg: var(--light-card-bg);
+    --card-title: var(--light-card-title);
+    --title: var(--light-title);
+
+    --invert-filter: unset;
+}
+
+body {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(prefers-color-scheme: dark) {
+    html.unset, body.unset {
+        --text: var(--dark-text);
+        --link: var(--dark-link);
+        color: var(--text);
+        background-color: var(--dark-bg);
+        --box-shadow: var(--dark-box-shadow);
+        --card-bg: var(--dark-card-bg);
+        --card-title: var(--dark-card-title);
+        --title: var(--dark-title);
+
+        --invert-filter: invert()
+    }
+}
+
+html.dark, body.dark {
+    --text: var(--dark-text);
+    --link: var(--dark-link);
+    color: var(--text);
+    background-color: var(--dark-bg);
+    --box-shadow: var(--dark-box-shadow);
+    --card-bg: var(--dark-card-bg);
+    --card-title: var(--dark-card-title);
+    --title: var(--dark-title);
+
+    --invert-filter: invert()
+}
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+    --light-text: rgba(100, 100, 100, 1);
+    --dark-text: rgba(220, 220, 220, 1);
+
+    --light-title: black;
+    --dark-title: white;
+
+    --light-bg: white;
+    --dark-bg: black;
+
+    --light-card-bg: rgba(250, 250, 250, 1);
+    --dark-card-bg: var(--rich-black);
+
+    --light-box-shadow: rgba(230, 230, 230, 1);
+    --dark-box-shadow: rgba(5, 5, 5, 1);
+
+    --light-link: rgba(30, 130, 180, 1);
+    --dark-link: rgba(40, 140, 190, 1);
+
+    --oxford-blue: #1B2A41;
+    --vivid-sky-blue: #51D6FF;
+    --rich-black: #0c1821;
+
+    --light-card-title: var(--oxford-blue);
+    --dark-card-title: var(--vivid-sky-blue);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--title);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+p {
+    color: var(--text);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 1em;
+    box-shadow: 3px 3px 3px 3px var(--box-shadow);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card_title {
+    color: var(--card-title);
+    text-align: center;
+}
+.card_subtitle {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+a.card_wrap_link {
+    text-decoration: none;
+    display: contents;
+}
