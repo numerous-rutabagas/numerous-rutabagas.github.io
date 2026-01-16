@@ -41,7 +41,7 @@
           default = pkgs.mkShell {
             packages = builtins.attrValues {
               inherit yarn-deps;
-              inherit (pkgs) nodejs;
+              inherit (pkgs) nodejs yarn;
             };
             shellHook = ''
               rm -r ./node_modules

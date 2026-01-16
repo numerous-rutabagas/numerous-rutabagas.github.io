@@ -1,4 +1,5 @@
 import "./global.css";
+import "./card.css";
 
 import App from "./App.svelte";
 

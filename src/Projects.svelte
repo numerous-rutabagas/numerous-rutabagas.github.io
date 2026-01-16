@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Tab from "./Tab.svelte";	
+	import MolecularOrbitals from "./MolecularOrbitals.svelte";
 </script>
 
 <h1 id="projects_title">
@@ -7,7 +8,7 @@
 </h1>
 <div id="frontend_projects" class="projects_container">
 	<a class="card_wrap_link" href="https://claritytalentmeasurement.com/roi-2/">
-		<div class="card" id="clarity_calculator">
+		<div class="pcard" id="clarity_calculator">
 			<h3 class="card_title">
 				Return on Investment Widget: Clarity Talent Measurement
 				<img src="./link.png" class="card_link" alt="Link"/>
@@ -22,7 +23,7 @@
 		</div>
 	</a>
 	<a href="https://sbbldrugcalculator.github.io" class="card_wrap_link">
-		<div class="card" id="drugcalculator">
+		<div class="pcard" id="drugcalculator">
 			<h3 class="card_title">
 				Drug Sentencing Calculator: SBBL Law, PLLC
 				<img src="./link.png" class="card_link" alt="Link"/>
@@ -35,7 +36,7 @@
 			</div>
 		</div>
 	</a>
-	<div class="card" id="template">
+	<div class="pcard" id="template">
 		<h3 class="card_title">
 			Scientific Journal Submission Template
 		</h3>
@@ -51,27 +52,11 @@
 			-->
 		</div>
 	</div>
-	<a class="card_wrap_link" href="https://gist.github.com/numerous-rutabagas/db06a549b109f03cce6a56d3da79a59a">
-		<div class="card" id="mo_lib">
-			<h3 class="card_title">
-				Molecular Orbital Typesetting Library
-				<img src="./link.png" class="card_link" alt="Link"/>
-			</h3>
-			<p class="card_subtitle">
-				<Tab/>
-				A library in Typst made for writing out molecular orbitals
-				and more generally, showing in standard notation the state of electrons.
-				Have you ever wanted to typeset something that included molecular orbitals, but
-				never had the ability to do so because there is no easy-to-use solution, especially
-				for Typst? No? Well, here is a solution anyway:
-			</p>
-			<img src="./molecular_orbital_code.png" id="mo_code" alt="Typst code for molecular orbitals"/>
-			<img src="./molecular_orbital_result.png" id="mo_result" alt="Molecular orbital diagram result"/>
-		</div>
-	</a>
+
+	<MolecularOrbitals/>
 	<!--
 	<a class="card_wrap_link" href="https://go.sewerai.com/ROI-calculator">
-		<div class="card" id="sewerai_calculator">
+		<div class="pcard" id="sewerai_calculator">
 			<h3 class="card_title">
 				Return on Investment Widget: SewerAI
 				<img src="./link.png" class="card_link" alt="Link"/>
@@ -85,14 +70,14 @@
 			</p>
 		</div>
 	</a>
-	<div class="card" id="placeholder"></div>
+	<div class="pcard" id="placeholder"></div>
 	-->
 </div>
 <h1 id="projects_title_misc">
 	Miscellaneous
 </h1>
 <div class="projects_container" id="misc_projects">
-	<div class="card" id="lean_units">
+	<div class="pcard" id="lean_units">
 		<h3 class="card_title">
 			Lean Units: Independent
 		</h3>
@@ -115,7 +100,7 @@
 			<img src="./lean_units.png" id="lean_units_code"/>
 		</div>
 	</div>
-	<div class="card" id="gistemp_rewrite">
+	<div class="pcard" id="gistemp_rewrite">
 		<h3 class="card_title">
 			NASA GISTEMP v4 Rewrite: Independent
 		</h3>
@@ -140,7 +125,7 @@
 		</div>
 	</div>
 	<a href="https://gist.github.com/numerous-rutabagas/a495cb2fd26470d657f6939b6a691fd7" class="card_wrap_link">
-		<div class="card" id="parametric_shader">
+		<div class="pcard" id="parametric_shader">
 			<h3 class="card_title">
 				Metal Parametric Curve Shader: Independent
 				<img src="./link.png" class="card_link" alt="Link"/>
@@ -171,8 +156,8 @@
 	.projects_container {
 		flex-direction: row;
 		display: flex;
-		width: 93%;
-		padding: 20px;
+		width: 100%;
+		padding: 15px;
 		gap: 2em;
 		margin-left: auto;
 		margin-right: auto;
@@ -181,48 +166,13 @@
 		box-sizing: border-box;
 	}
 
-	.card_wrap_link {
-		display: content;
-	}
-
-	.card, .flex-container {
-		display: grid;
-		grid-template-rows: min-content min-content auto;
-		flex-grow: 1;
-		flex-basis: 570px;
-		z-index: 20;
-		position: relative;
-		max-width: 605px;
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 1.5em;
-	}
-
-	img {
+	img:not(.card_link) {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 5px;
 	}
 
-	.card_link {
-		width: 1em;
-		z-index: 2;
-		display: inline;
-		position: relative;
-		top: 0.2em;
-		left: 0.5em;
-	}
-
-	.img_wrapper {
-		height: 100%;
-		text-align: center;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	}
 
 	#template {
 	}

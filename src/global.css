@@ -6,7 +6,8 @@ body {
     --text: var(--light-text);
     --link: var(--light-link);
     color: var(--text);
-    background-color: var(--light-bg);
+    --bg: var(--light-bg);
+    background-color: var(--bg);
     --box-shadow: var(--light-box-shadow);
     --card-bg: var(--light-card-bg);
     --card-title: var(--light-card-title);
@@ -26,7 +27,6 @@ body {
         --text: var(--dark-text);
         --link: var(--dark-link);
         color: var(--text);
-        background-color: var(--dark-bg);
         --box-shadow: var(--dark-box-shadow);
         --card-bg: var(--dark-card-bg);
         --card-title: var(--dark-card-title);
@@ -40,7 +40,7 @@ html.dark, body.dark {
     --text: var(--dark-text);
     --link: var(--dark-link);
     color: var(--text);
-    background-color: var(--dark-bg);
+    --bg: var(--dark-bg);
     --box-shadow: var(--dark-box-shadow);
     --card-bg: var(--dark-card-bg);
     --card-title: var(--dark-card-title);
@@ -91,7 +91,7 @@ p {
     color: var(--text);
 }
 
-.card {
+.card, .pcard {
     background-color: var(--card-bg);
     border-radius: 1em;
     box-shadow: 3px 3px 3px 3px var(--box-shadow);
