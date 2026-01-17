@@ -46,7 +46,7 @@
 			This was used for the BIOLOGY 173 lab report; a sample page is shown below.
 		</p>
 		<div id="lab_report_wrapper">
-			<img src="./lab_report.png" id="lab_report" alt="BIOLOGY 173 lab report"/>
+			<img src="./lab_report.svg" id="lab_report" alt="BIOLOGY 173 lab report"/>
 			<!--
 				<img src="./lab_report_table.png" id="lab_report" alt="BIOLOGY 173 lab report"/>
 			-->
