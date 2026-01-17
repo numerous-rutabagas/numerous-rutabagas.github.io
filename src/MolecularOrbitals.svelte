@@ -9,9 +9,9 @@
 #molecular_orbital_diagram(
   horizontal_offset: 2, 
   [
-    #full($2"p"_(x a)$)
-    #full($2"p"_(y a)$)
-    #spot(label: $2"p"_(z a)$, electron, blank)
+    #spot(label: $2"p"_(x a)$, electron, electron)
+    #spot(label: $2"p"_(y b)$, electron, electron)
+    #spot(label: $2"p"_(z c)$, electron, blank)
   ],
   [
     #spot(label: $2"p"_(x b)$, electron, electron)
