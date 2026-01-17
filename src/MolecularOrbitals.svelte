@@ -68,5 +68,6 @@
 		flex-wrap: true;
 		flex-direction: column;
 		row-gap: 1.5em;
+		min-width: 0px;
 	}
 </style>
