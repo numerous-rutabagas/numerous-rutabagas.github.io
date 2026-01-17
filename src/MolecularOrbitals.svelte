@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Tab from "./Tab.svelte";	
-  import CodeMirror from "./CodeMirror.svelte";
-  import TypstPreview from "./TypstPreview.svelte";
+  import CodeMirror from "./modules/CodeMirror.svelte";
+  import TypstPreview from "./modules/TypstPreview.svelte";
+  import { sources } from "./typst/molecular_orbital_diagram.ts";
 
   let value = `#import "molecular_orbital_diagram.typ": *
 #set page(height: 3.5in, width: 5.5in)
@@ -55,7 +56,7 @@
 	</p>
 	<div id="demo_container">
 		<CodeMirror bind:value={value}/>
-		<TypstPreview bind:value={value}/>
+		<TypstPreview bind:value={value} sources={sources}/>
 	</div>
 </div>
 

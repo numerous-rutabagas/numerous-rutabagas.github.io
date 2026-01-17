@@ -1,7 +1,8 @@
 <script lang="ts">
   import { $typst as _typst } from "@myriaddreamin/typst.ts";
   import { onMount } from "svelte";
-  import { sources } from "./typst/molecular_orbital_diagram.ts";
+
+  export let sources;
 
   export let value;
   let render_div: HTMLDivElement;
